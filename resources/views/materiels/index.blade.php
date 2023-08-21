@@ -4,6 +4,7 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
+                
                 <h2><center>Systeme De Gestion Des Materiels De L'Isep</center></h2>
             </div>
 
