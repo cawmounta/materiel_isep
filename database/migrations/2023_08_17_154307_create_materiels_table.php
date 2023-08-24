@@ -14,12 +14,12 @@ return new class extends Migration
         Schema::create('materiels', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nom')->nullable();
+            $table->string('inventaire')->nullable();
             $table->longText('description')->nullable();
-            $table->longText('inventaire')->nullable();
-            $table->string('etat')->nullable();
+            $table->string("image")->default("default.png");
 
 
-        
+
             $table->timestamps();
         });
     }

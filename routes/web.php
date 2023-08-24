@@ -4,6 +4,9 @@ use App\Http\Controllers\MaterielController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\Auth\LoginController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -29,14 +32,19 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
+
     Route::resource('materiels', MaterielController::class);
 
     Route::get('home',[HomeController::class,'home'])->name('home');
     Route::get('apropos', [HomeController::class,'apropos'])->name('apropos');
     Route::get('contact', [HomeController::class,'contact'])->name('contact');
     Route::get('service', [HomeController::class,'service'])->name('service');
+    Route::get('logout', [HomeController::class,'logout'])->name('logout');
 
-    
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+
+
 
 
 });

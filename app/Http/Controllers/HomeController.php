@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+
     public function home(){
         return view('home');
     }
@@ -20,6 +21,10 @@ class HomeController extends Controller
 
     public function service(){
         return view('service');
+    }
+
+    public function logout(){
+        return view('logout');
     }
 
 

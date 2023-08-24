@@ -83,4 +83,11 @@ class MaterielController extends Controller
 
         return redirect()->route('materiels.index')->with('success','Materiel supprimer avec  successer');
     }
+
+
+
+
+
+
+
 }
