@@ -46,7 +46,8 @@
             <h6 class="collapse-header">Menu</h6>
             <a class="collapse-item" href="{{ route('materiels.create') }}">Ajouter un materiel</a>
             <a class="collapse-item" href="{{ route('materiels.index') }}">Liste des materiels</a>
-            <a class="collapse-item" href="{{ route('home') }}">Gestion des materiels</a>
+            <a class="collapse-item" href="{{ route('professeurs.create') }}">Demande de materiel</a>
+            <a class="collapse-item" href="{{ route('professeurs.index') }}">Liste des demandes</a>
 
             <a class="collapse-item" href="{{ route('apropos') }}">A propos de nous</a>
             <a class="collapse-item" href="{{ route('contact') }}">Nos contact</a>
@@ -118,17 +119,6 @@
           </div>
 
           <main>
-            <div class="card">
-              <img src="{{ asset('images/isep.jfif') }}" class="card-img-top" alt="ISEP de Thiès">
-              <div class="card-body">
-                <h5 class="card-title">ISEP de Thiès</h5>
-                <p class="card-text">
-                  L'Institut Supérieur d'Enseignement Professionnel de Thiès est un établissement d'enseignement supérieur...
-                </p>
-                <a href="#" class="btn btn-primary">En savoir plus</a>
-              </div>
-
-            </div>
 
             <div class="card">
                 <div class="card-body">
@@ -136,6 +126,18 @@
                    <p class="card-text">{{ $totalMateriels }}</p>
                 </div>
             </div>
+                <div class="card">
+              <img src="{{ asset('images/isep.jfif') }}" class="card-img-top" alt="ISEP de Thiès">
+              <div class="card-body">
+                <h5 class="card-title">ISEP Thiès</h5>
+                <img src="{{ asset('images/dev.jpg') }}" class="card-img-top" alt="DWM">
+              <div class="card-body">
+                <h5 class="card-title">Developpement Web Mobile</h5>
+
+
+            </div>
+
+
 
 
           </main>

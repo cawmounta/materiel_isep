@@ -5,7 +5,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\ProfesseurController;
 
 
 /*
@@ -34,6 +34,7 @@ Route::middleware('auth')->group(function () {
 
 
     Route::resource('materiels', MaterielController::class);
+    Route::resource('professeurs', ProfesseurController::class);
 
     Route::get('home',[HomeController::class,'home'])->name('home');
     Route::get('apropos', [HomeController::class,'apropos'])->name('apropos');
